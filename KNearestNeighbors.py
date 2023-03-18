@@ -1,6 +1,6 @@
 import numpy as np
 
-class KNearestNeighbor:
+class KNearestNeighbors:
 
     def __init__(self, k):
         self.k = k
@@ -104,7 +104,7 @@ X_train = np.array([[0.25, 1.5],
 y_train = np.array([1, 1, 0, 0, 0, 1], int)
 
 X_test = np.array([[0.5, 0.95], [1.17, 0.34], [2.5, 0.34], [-0.54, 0.32]], float)
-kNN = KNearestNeighbor(k=2)
+kNN = KNearestNeighbors(k=2)
 kNN.fit(X_train, y_train)
 y_pred = np.array(kNN.predict(X_test, num_loops=2), int) #true
 print(y_pred)
