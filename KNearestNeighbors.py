@@ -112,6 +112,5 @@ print(y_pred)
 y_pred1 = np.array(kNN.predict(X_test, num_loops=1), int)
 print(y_pred1)
 
-
 #y_pred2 = np.array(kNN.predict(X_test, num_loops=0), int)
 #print(y_pred2)
